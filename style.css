@@ -7,15 +7,6 @@ li {
   list-style: none;
 }
 
-.bgimg {
-  width: 100%;
-  min-height: 100vh;
-  background-image: url("img/daan-evers-tKN1WXrzQ3s-unsplash.jpg");
-  background-attachment: fixed;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
 .wrapper {
   padding: 90px 16px 150px 16px;
   margin: 0 auto;
@@ -25,59 +16,14 @@ li {
 
 .item-title {
   font-size: 40px;
-  font-weight: 700;
+  font-weight: bold;
+  line-height: 68px;
   margin-bottom: 70px;
   display: inline-block;
   border-bottom: solid 6px #e03131;
 }
 
-/*---------------------header------------------*/
-.header {
-  padding: 20px 40px;
-  text-align: center;
-  position: relative;
-}
-.header .site-title {
-  padding: 0 16px;
-  position: absolute;
-  top: 45%;
-  left: 0;
-  right: 0;
-}
-.header .nav-menu ul {
-  display: flex;
-  justify-content: flex-end;
-  font-size: 14px;
-}
-.header .nav-menu ul li {
-  margin-left: 30px;
-}
-.header .nav-menu a {
-  color: #fff;
-  font-weight: bold;
-  transition: all 0.3s ease;
-  filter: drop-shadow(1px 1px 2px #121212);
-}
-.header .nav-menu a:hover {
-  color: RGB(224, 49, 49);
-}
-
-/*---------------------menu------------------*/
-#menu {
-  margin-top: 20px;
-}
-#menu .bgimg2 {
-  background-image: url("img/coffee-gda5781c13_1280.jpg");
-  position: relative;
-}
-#menu .fixed-bg {
-  height: 300px;
-  background-attachment: fixed;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-#menu .sec-title {
+.sec-title {
   width: 100%;
   position: absolute;
   font-size: 72px;
@@ -88,6 +34,81 @@ li {
   right: 0;
   text-align: center;
   filter: drop-shadow(1px 1px 10px #c0c0c0);
+}
+
+.fixed-bg {
+  height: 300px;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/*---------------------header------------------*/
+#header {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url("img/daan-evers-tKN1WXrzQ3s-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  padding: 20px 40px;
+  position: relative;
+}
+#header .site-title {
+  padding: 0 16px;
+  position: absolute;
+  text-align: center;
+  top: 45%;
+  left: 0;
+  right: 0;
+  filter: drop-shadow(1px 1px 10px #c0c0c0);
+}
+#header .nav-menu ul {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 14px;
+}
+#header .nav-menu ul li {
+  margin-left: 30px;
+}
+#header .nav-menu a {
+  color: #fff;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  filter: drop-shadow(1px 1px 2px #121212);
+}
+#header .nav-menu a:hover {
+  color: RGB(224, 49, 49);
+}
+
+#video-area {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+
+#video {
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 400px;
+}
+
+/*---------------------menu------------------*/
+#menu {
+  margin-top: 20px;
+}
+#menu .bgimg2 {
+  background-image: url("img/coffee-gda5781c13_1280.jpg");
+  position: relative;
 }
 #menu .menu-content {
   display: flex;
@@ -126,25 +147,6 @@ li {
 #about .bgimg3 {
   background-image: url("img/coffee-ge1602548b_1920.jpg");
   position: relative;
-}
-#about .fixed-bg {
-  height: 300px;
-  background-attachment: fixed;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-#about .sec-title {
-  width: 100%;
-  position: absolute;
-  font-size: 72px;
-  font-weight: bold;
-  color: #fff;
-  top: 45%;
-  left: 0;
-  right: 0;
-  text-align: center;
-  filter: drop-shadow(1px 1px 10px #c0c0c0);
 }
 #about ul {
   display: flex;
@@ -219,28 +221,14 @@ li {
   background-image: url("img/mihai-moisa-Djtc1T38-GY-unsplash.jpg");
   position: relative;
 }
-#location .fixed-bg {
-  height: 300px;
-  background-attachment: fixed;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-#location .sec-title {
-  width: 100%;
-  position: absolute;
-  font-size: 72px;
-  font-weight: bold;
-  color: #fff;
-  top: 45%;
-  left: 0;
-  right: 0;
-  text-align: center;
-  filter: drop-shadow(1px 1px 10px #c0c0c0);
-}
 #location .location-map {
   filter: grayscale(1);
   margin-bottom: 20px;
+}
+#location .location-map iframe {
+  width: 100%;
+  height: 400px;
+  border: 0;
 }
 #location .location-info {
   text-align: left;
@@ -256,4 +244,54 @@ footer {
   font-size: 10px;
   text-align: center;
   padding: 10px 0;
+  background-color: #000;
+  color: #fff;
+}
+
+/*-----------------sp------------------*/
+@media screen and (max-width: 767px) {
+  .bgimg {
+    height: 480px;
+    background-attachment: scroll;
+  }
+  .sec-title {
+    font-size: 32px;
+  }
+  .item-title {
+    font-size: 20px;
+    line-height: 34px;
+    margin-bottom: 25px;
+  }
+  .fixed-bg {
+    height: 94px;
+    background-attachment: scroll;
+  }
+  .wrapper {
+    padding: 30px 16px 60px 16px;
+  }
+  #menu {
+    margin-top: 10px;
+  }
+  #menu .menu-content {
+    flex-direction: column;
+  }
+  #menu .menu-item {
+    width: 100%;
+    padding: 0;
+  }
+  #menu .menu-item:first-child {
+    border-right: none;
+  }
+  #menu .menu-item dl {
+    margin-bottom: 10px;
+  }
+  #menu .menu-item dl .food {
+    margin-bottom: 10px;
+  }
+  #about ul {
+    flex-direction: column;
+  }
+  #about ul li {
+    width: 100%;
+  }
 }/*# sourceMappingURL=style.css.map */
