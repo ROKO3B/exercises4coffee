@@ -1,0 +1,219 @@
+html[lang=ja] {
+  font-family: "Helvetica Neue", "Arial", "Hiragino Sans", "Hiragino Kaku", "Gothic ProN", "Meiryo", sans-serif;
+  font-size: 100%;
+  scroll-behavior: smooth;
+}
+
+li {
+  list-style: none;
+}
+
+.bgimg {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url("img/daan-evers-tKN1WXrzQ3s-unsplash.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/*---------------------header------------------*/
+.header {
+  padding: 20px 40px;
+  text-align: center;
+  position: relative;
+}
+.header .site-title {
+  padding: 0 16px;
+  position: absolute;
+  top: 45%;
+  left: 0;
+  right: 0;
+}
+.header .nav-menu ul {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 14px;
+}
+.header .nav-menu ul li {
+  margin-left: 30px;
+}
+.header .nav-menu a {
+  color: #fff;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  filter: drop-shadow(1px 1px 2px #121212);
+}
+.header .nav-menu a:hover {
+  color: RGB(224, 49, 49);
+}
+
+/*---------------------menu------------------*/
+.wrapper {
+  padding: 90px 16px 150px 16px;
+  margin: 0 auto;
+  max-width: 1000px;
+  text-align: center;
+}
+
+#menu {
+  margin-top: 20px;
+}
+#menu .bgimg2 {
+  background-image: url("img/coffee-gda5781c13_1280.jpg");
+  position: relative;
+}
+#menu .fixed-bg {
+  height: 300px;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#menu .sec-title {
+  width: 100%;
+  position: absolute;
+  font-size: 72px;
+  font-weight: bold;
+  color: #fff;
+  top: 45%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  filter: drop-shadow(1px 1px 10px #c0c0c0);
+}
+#menu .menu-content {
+  display: flex;
+}
+#menu .menu-item {
+  width: 50%;
+  padding: 0 45px;
+}
+#menu .menu-item .item-title {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 70px;
+  display: inline-block;
+  border-bottom: solid 6px #e03131;
+}
+#menu .menu-item:first-child {
+  border-right: 1px solid #000;
+}
+#menu .menu-item dl {
+  display: flex;
+  flex-wrap: wrap;
+  font-weight: normal;
+}
+#menu .menu-item dl dt {
+  width: 87%;
+  margin-bottom: 25px;
+  text-align: left;
+  border-bottom: dotted 1px #000;
+}
+#menu .menu-item dl dd {
+  width: 13%;
+  padding-top: 6px;
+  text-align: right;
+}
+#menu .menu-item .food {
+  margin-bottom: 55px;
+}
+
+/*-------------------about------------------*/
+#about {
+  margin-top: 20px;
+}
+#about .bgimg3 {
+  background-image: url("img/coffee-ge1602548b_1920.jpg");
+  position: relative;
+}
+#about .fixed-bg {
+  height: 300px;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#about .sec-title {
+  width: 100%;
+  position: absolute;
+  font-size: 72px;
+  font-weight: bold;
+  color: #fff;
+  top: 45%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  filter: drop-shadow(1px 1px 10px #c0c0c0);
+}
+#about .item-title {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 70px;
+  display: inline-block;
+  border-bottom: solid 6px #e03131;
+}
+#about ul {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+#about ul li {
+  width: 50%;
+  line-height: 2;
+  text-align: left;
+  padding: 2%;
+  font-size: 14px;
+}
+#about .btn {
+  width: 160px;
+  height: 50px;
+  line-height: 3.5;
+  display: inline-block;
+  color: #000;
+  cursor: pointer;
+  transition: all 0.3s sase;
+  position: relative;
+}
+#about .btn span {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+#about .btn::before, #about .btn::after {
+  position: absolute;
+  content: "";
+  right: 0;
+  bottom: 0;
+  background: #e03131;
+  transition: all 0.3s ease;
+}
+#about .btn span::before,
+#about .btn span::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  background: #e03131;
+  transition: all 0.3s ease;
+}
+#about .btn::before,
+#about .btn span::before {
+  width: 2px;
+  height: 50%;
+}
+#about .btn::after,
+#about .btn span::after {
+  width: 20%;
+  height: 2px;
+}
+#about .btn:hover::before,
+#about .btn span:hover::before {
+  height: 100%;
+}
+#about .btn:hover::after,
+#about .btn span:hover::after {
+  width: 100%;
+}/*# sourceMappingURL=style.css.map */
