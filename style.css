@@ -1,7 +1,6 @@
 html[lang=ja] {
   font-family: "Helvetica Neue", "Arial", "Hiragino Sans", "Hiragino Kaku", "Gothic ProN", "Meiryo", sans-serif;
   font-size: 100%;
-  scroll-behavior: smooth;
 }
 
 li {
@@ -15,6 +14,21 @@ li {
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.wrapper {
+  padding: 90px 16px 150px 16px;
+  margin: 0 auto;
+  max-width: 1000px;
+  text-align: center;
+}
+
+.item-title {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 70px;
+  display: inline-block;
+  border-bottom: solid 6px #e03131;
 }
 
 /*---------------------header------------------*/
@@ -49,13 +63,6 @@ li {
 }
 
 /*---------------------menu------------------*/
-.wrapper {
-  padding: 90px 16px 150px 16px;
-  margin: 0 auto;
-  max-width: 1000px;
-  text-align: center;
-}
-
 #menu {
   margin-top: 20px;
 }
@@ -88,13 +95,6 @@ li {
 #menu .menu-item {
   width: 50%;
   padding: 0 45px;
-}
-#menu .menu-item .item-title {
-  font-size: 40px;
-  font-weight: 700;
-  margin-bottom: 70px;
-  display: inline-block;
-  border-bottom: solid 6px #e03131;
 }
 #menu .menu-item:first-child {
   border-right: 1px solid #000;
@@ -145,13 +145,6 @@ li {
   right: 0;
   text-align: center;
   filter: drop-shadow(1px 1px 10px #c0c0c0);
-}
-#about .item-title {
-  font-size: 40px;
-  font-weight: 700;
-  margin-bottom: 70px;
-  display: inline-block;
-  border-bottom: solid 6px #e03131;
 }
 #about ul {
   display: flex;
@@ -216,4 +209,51 @@ li {
 #about .btn:hover::after,
 #about .btn span:hover::after {
   width: 100%;
+}
+
+/*-----------------location------------------*/
+#location {
+  margin-top: 20px;
+}
+#location .bgimg4 {
+  background-image: url("img/mihai-moisa-Djtc1T38-GY-unsplash.jpg");
+  position: relative;
+}
+#location .fixed-bg {
+  height: 300px;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#location .sec-title {
+  width: 100%;
+  position: absolute;
+  font-size: 72px;
+  font-weight: bold;
+  color: #fff;
+  top: 45%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  filter: drop-shadow(1px 1px 10px #c0c0c0);
+}
+#location .location-map {
+  filter: grayscale(1);
+  margin-bottom: 20px;
+}
+#location .location-info {
+  text-align: left;
+}
+#location .location-info p {
+  font-size: 14px;
+  margin-bottom: 10px;
+  line-height: 24px;
+}
+
+/*-----------------footer------------------*/
+footer {
+  font-size: 10px;
+  text-align: center;
+  padding: 10px 0;
 }/*# sourceMappingURL=style.css.map */
